@@ -15,6 +15,14 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown("""
+    <style>
+    .stApp {
+        background-color: white;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # =========================
 # LOAD MODEL
 # =========================
@@ -26,13 +34,13 @@ model = joblib.load("model.pkl")
 col1, col2, col3 = st.columns([1,6,1])
 
 with col1:
-    st.image("https://upload.wikimedia.org/wikipedia/id/c/ca/Stmkg-new.png")
+    st.image("https://upload.wikimedia.org/wikipedia/id/c/ca/Stmkg-new.png", width=80)
 
 with col2:
     st.markdown("<h1 style='text-align:center;'>🌊 Early Warning System Banjir Rob</h1>", unsafe_allow_html=True)
 
 with col3:
-    st.image("https://upload.wikimedia.org/wikipedia/commons/1/12/Logo_BMKG_%282010%29.png")
+    st.image("https://upload.wikimedia.org/wikipedia/commons/1/12/Logo_BMKG_%282010%29.png", width=80)
 
 # =========================
 # SIDEBAR INPUT
