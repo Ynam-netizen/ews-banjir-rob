@@ -26,13 +26,13 @@ model = joblib.load("model.pkl")
 col1, col2, col3 = st.columns([1,6,1])
 
 with col1:
-    st.image("https://upload.wikimedia.org/wikipedia/id/thumb/3/3c/Logo_STMKG.png/200px-Logo_STMKG.png")
+    st.image("https://upload.wikimedia.org/wikipedia/id/c/ca/Stmkg-new.png")
 
 with col2:
     st.markdown("<h1 style='text-align:center;'>🌊 Early Warning System Banjir Rob</h1>", unsafe_allow_html=True)
 
 with col3:
-    st.image("https://upload.wikimedia.org/wikipedia/id/thumb/5/5b/Logo_BMKG.png/200px-Logo_BMKG.png")
+    st.image("https://upload.wikimedia.org/wikipedia/commons/1/12/Logo_BMKG_%282010%29.png")
 
 # =========================
 # SIDEBAR INPUT
